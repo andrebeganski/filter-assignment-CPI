@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Consumer Price Index</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Your styles should be called here -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+</head>
+
+<body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+        <h1 class="headline">A Breakdown of U.S. Inflation</h1>
+        </div>
+        <div class="container">
+        <img id="main_picture" src="img/inflation.jpg" alt="As inflation rises, purchasing power is reduced i.e. money on fire"/>
+        </div>
+        <div class="container">        
+        <p>By André Beganski</p>
+
+        <p>U.S. inflation worsened in February, rising to a 40-year high. The annual inflation rate rose to <b>7.9%</b> last month, the Bureau of Labor Statistics <a href="https://www.bls.gov/news.release/pdf/cpi.pdf">said</a> Thursday.</p>
+        
+        <p>Its Consumer Price Index tracks price movements across a broad range of goods and services for consumers. Core CPI, an index that excludes food and energy because they are prone to volatile swings, shows how inflation is seeping into the broader economy at <b>6.8%</b>.</p>
+        
+        <p>The Federal Reserve, which controls U.S. monetary policy, is comitted to keeping yearly inflation at <b>2%</b>.</p>
+        </div>
+        <figure id="container2" class="container">
+            <iframe title="Inflation rose to a 40-year high, reaching 7.9% in February  " aria-label="Interactive line chart" id="datawrapper-chart-Aq728" src="https://datawrapper.dwcdn.net/Aq728/2/" scrolling="no" frameborder="0" style="border: none; padding: 2em; display: block; margin: auto;" width="600" height="400"></iframe>
+        </figure>
+        <div class="container"> 
+        <p>Use the dropdown to filter the items by category and inflation rate. Percentage increase is compared to 12 months ago from February 2022 and unadjusted for seasonal trends.</p>
+        <div class="filter">
+            <select class="filter1">
+                    <option value="item">Filter...</option>
+                    <option value="item">All items</option>
+                    <option value="core">Core items</option>
+                    <option value="five">0% to 5%</option>
+                    <option value="ten">5% to 10%</option>
+                    <option value="twenty_five">10% to 25%</option>
+                    <option value="fifty">25% to 50%</option>
+                    <option value="commodities">Commodities</option>
+                    <option value="services">Services</option>
+                    <option value="food">Food</option>
+                    <option value="energy">Energy</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="medical_care">Medical Care</option>
+                </select>
+        </div>
+
+        <section id="category">
+            <div class="item commodities food ten active">
+                <img src="img/food at home.jpg" />
+                <h3>Food at home: 8.6%</h3>
+            </div>
+
+            <div class="item commodities food ten active">
+                <img src="img/food away from home.jpg" />
+                <h3>Food away from home: 6.8%</h3>
+            </div>
+
+            <div class="item energy commodities fifty active">
+                <img src="img/gasoline.jpg" />
+                <h3>Gasoline: 38%</h3>
+            </div>
+
+            <div class="item energy commodities fifty active">
+                <img src="img/fuel oil.jpg" />
+                <h3>Fuel oil: 43%</h3>
+            </div>
+
+            <div class="item services energy ten active">
+                <img src="img/electricity.jpg" />
+                <h3>Electricity: 9.0%</h3>
+            </div>
+
+            <div class="item services energy twenty_five active">
+                <img src="img/utility gas service.jpg" />
+                <h3>Utility gas services: 23.8%</h3>
+            </div>
+
+            <div class="item commodities ten core active">
+                <img src="img/apparel.jpg" />
+                <h3>Apparel: 6.6%</h3>
+            </div>
+
+            <div class="item services five core active">
+                <img src="img/shleter.jpg" />
+                <h3>Shelter: 4.7%</h3>
+            </div>
+
+            <div class="item transportation commodities twenty_five core active">
+                <img src="img/new vehicles.jpg" />
+                <h3>New vhicles: 12.4%</h3>
+            </div>
+
+            <div class="item transportation commodities fifty core active"> 
+                <img src="img/used cars and trucks.jpg" />
+                <h3>Used cars and trucks: 41.2%</h3>
+            </div>
+
+            <div class="item transportation services ten core active">
+                <img src="img/transportation services.png" />
+                <h3>Transportation services: 6.6%</h3>
+            </div>
+
+            <div class="item medical_care commodities five core active">
+                <img src="img/medical care commodities.jpg" />
+                <h3>Medical care goods: 2.5%</h3>
+            </div>
+
+            <div class="item"></div>
+
+            <div class="item medical_care services five core active">
+                <img src="img/medical care services.jpg" />
+                <h3>Medical care services: 2.4%</h3>
+            </div>
+
+            <div class="item"></div>
+        </section>
+    </div>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+</body>
+
+</html>
